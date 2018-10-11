@@ -1,0 +1,24 @@
+body{
+    background-repeat:no-repeat;
+    background-size:100% auto;
+}
+#regbox,#logbox{
+    display: none;
+}
+input{
+    border:none;
+    border-bottom:2px solid red;
+    background:transparent;
+    font-weight: bolder;
+    text-decoration-color: black; text-align: center;
+}
+::placeholder{
+    color:black;
+}
+div{
+    position:absolute; left:25%; top:5%;
+    width:50%; text-align: center;
+}
+.btn{
+    width: 170px;
+}
