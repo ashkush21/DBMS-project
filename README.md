@@ -1,3 +1,3 @@
 # DBMS-project
 
-A basic frontend application for implementing dbms concepts.
+Basic frontend application for implementing dbms concepts.
