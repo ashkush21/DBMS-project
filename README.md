@@ -1,1 +1,1 @@
-# DBMS-project
+# DBMS-project (using mysql)
