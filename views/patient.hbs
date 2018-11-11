@@ -7,7 +7,7 @@
           width:60%;
           text-align: center;
       }
-        #info,#manage,#dele{
+        #info,#manage,#dele,#dinfo{
             display: none;
         }
         h3{
@@ -57,11 +57,19 @@
     </form><br>
     <button id="no" class=" btn btn-outline-success">NO</button>
 </div>
-
+<div id="dinfo">
+    <p>{{#if doc.first}} NAME : {{doc.first}}{{/if}}  {{#if doc.last}} {{doc.last}}{{/if}}</p>
+    <p>{{#if doc.userId}}USER ID : {{doc.userId}} {{/if}}</p>
+    <p>{{#if doc.dept}}DEPARTMENT : {{doc.dept}} {{/if}}</p>
+    <p>{{#if doc.post}}POST : {{doc.post}} {{/if}}</p>
+    <p>{{#if doc.postgrad}}POST GRADUATION : {{doc.postgrad}} {{/if}}</p>
+    <p>{{#if doc.phone}} PHONE NUMBER : {{doc.phone}} {{/if}}</p>
+</div>
 </div>
 </body>
 </html>
 <script>
+
 var a = document.getElementById('a');
 var b = document.getElementById('b');
 var c = document.getElementById('c');
@@ -71,21 +79,34 @@ var del = document.getElementById('del');
 var info=document.getElementById('info');
 var manage=document.getElementById('manage');
 var dele=document.getElementById('dele');
+var dinfo=document.getElementById('dinfo');
+
 a.addEventListener('click',function(){
    info.style.display='block';
    manage.style.display='none';
+    dinfo.style.display='none';
+    dele.style.display='none';
 })
 b.addEventListener('click',function(){
     manage.style.display='block';
     info.style.display='none';
+    dinfo.style.display='none';
+    dele.style.display='none';
 })
 del.addEventListener('click',function(){
     manage.style.display='none';
     info.style.display='none';
     dele.style.display='block';
+    dinfo.style.display='none';
 })
 no.addEventListener('click',function(){
     dele.style.display='none';
+})
+c.addEventListener('click',function(){
+    manage.style.display='none';
+    info.style.display='none';
+    dele.style.display='none';
+    dinfo.style.display='block';
 })
 
 </script>

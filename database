@@ -17,22 +17,24 @@ mysql> describe pdata;
 11 rows in set (0.05 sec)
 
 
-mysql> describe ddata;
+mysql>  describe ddata;
 +----------+--------------+------+-----+---------+----------------+
 | Field    | Type         | Null | Key | Default | Extra          |
 +----------+--------------+------+-----+---------+----------------+
 | first    | varchar(20)  | NO   |     | NULL    |                |
 | last     | varchar(20)  | YES  |     | NULL    |                |
-| blood    | varchar(3)   | NO   |     | NULL    |                |
+| blood    | varchar(4)   | YES  |     | NULL    |                |
 | userId   | int(3)       | NO   | PRI | NULL    | auto_increment |
 | password | varchar(20)  | NO   |     | NULL    |                |
 | address  | varchar(100) | YES  |     | NULL    |                |
-| phone    | int(10)      | YES  |     | NULL    |                |
+| phone    | bigint(10)   | YES  |     | NULL    |                |
 | aadhar   | int(3)       | NO   | UNI | NULL    |                |
 | dept     | varchar(20)  | NO   |     | NULL    |                |
 | post     | varchar(20)  | NO   |     | NULL    |                |
 | postgrad | varchar(2)   | NO   |     | NULL    |                |
+| patients | int(3)       | YES  |     | NULL    |                |
 +----------+--------------+------+-----+---------+----------------+
-11 rows in set (0.00 sec)
+12 rows in set (0.00 sec)
+
 
 

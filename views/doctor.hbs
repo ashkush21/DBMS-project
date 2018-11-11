@@ -7,7 +7,7 @@
             width:60%;
             text-align: center;
         }
-        #info,#manage,#dele{
+        #info,#manage,#dele,#patinfo{
             display: none;
         }
         h3{
@@ -26,6 +26,7 @@
     <button id="c" class=" btn btn-outline-primary">Patient Info</button>
     <a role="button" class=" btn btn-outline-primary" href="/dlogout">Logout</a>
     <button  id='del' class=" btn btn-outline-primary">Delete Account</button>
+    <input type="hidden" value="{{length}}" id="len">
     <div id="info">
         <br><br><br>
         <p>NAME : {{data.first}}&nbsp;{{data.last}}</p>
@@ -38,6 +39,7 @@
         <p>PASSWORD : {{data.password}}</p>
         <p>{{#if data.address}}ADDRESS:  {{data.address}} {{/if}}</p>
         <p>{{#if data.phone}}PHONE NUMBER:  {{data.phone}} {{/if}}</p>
+        <p>{{#if data.patients}}PATIENTS:  {{data.patients}} {{/if}}</p>
     </div>
     <div id="manage">
         <form action="/dmanage" method="post">
@@ -55,11 +57,21 @@
         </form><br>
         <button id="no" class=" btn btn-outline-success">NO</button>
     </div>
+   <div id="patinfo">
+       <br><br>
+       PATIENT IDs<br>
+      {{#each pat}}
+          ID : {{this.patId}}<br>
+      {{/each}}
 
+   </div>
 </div>
 </body>
 </html>
 <script>
+    var patinfo=document.getElementById('patinfo');
+    if(document.getElementById('len').value==0)
+        patinfo.innerHTML='<h3><br><br><br>NO PATIENTS ASSIGNED</h3>';
     var a = document.getElementById('a');
     var b = document.getElementById('b');
     var c = document.getElementById('c');
@@ -69,21 +81,34 @@
     var info=document.getElementById('info');
     var manage=document.getElementById('manage');
     var dele=document.getElementById('dele');
+
+
     a.addEventListener('click',function(){
         info.style.display='block';
         manage.style.display='none';
+        patinfo.style.display='none';
+        dele.style.display='none';
     })
     b.addEventListener('click',function(){
         manage.style.display='block';
         info.style.display='none';
+        patinfo.style.display='none';
+        dele.style.display='none';
     })
     del.addEventListener('click',function(){
         manage.style.display='none';
         info.style.display='none';
         dele.style.display='block';
+        patinfo.style.display='none';
     })
     no.addEventListener('click',function(){
         dele.style.display='none';
+    })
+    c.addEventListener('click',function(){
+        manage.style.display='none';
+        info.style.display='none';
+        dele.style.display='none';
+        patinfo.style.display='block';
     })
 
 </script>

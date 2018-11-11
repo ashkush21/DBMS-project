@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e48e782-39a7-4004-87bc-9f53136c722d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/doctors.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/doctors.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mainpage.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mainpage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/nurses.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/patients.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/patients.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/routes/doctor.js" afterPath="$PROJECT_DIR$/routes/doctor.js" />
+      <change beforePath="$PROJECT_DIR$/routes/patient.js" afterPath="$PROJECT_DIR$/routes/patient.js" />
+      <change beforePath="$PROJECT_DIR$/views/doctor.hbs" afterPath="$PROJECT_DIR$/views/doctor.hbs" />
+      <change beforePath="$PROJECT_DIR$/views/patient.hbs" afterPath="$PROJECT_DIR$/views/patient.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="patient.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="patient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/patient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+            <state relative-caret-position="1620">
+              <caret line="90" column="135" lean-forward="false" selection-start-line="90" selection-start-column="135" selection-end-line="90" selection-end-column="135" />
               <folding />
             </state>
           </provider>
@@ -36,40 +32,18 @@
       <file leaf-file-name="doctor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/doctor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+            <state relative-caret-position="129">
+              <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doctors.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/doctors.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="50" column="68" lean-forward="false" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
-              <folding>
-                <element signature="e#1520#1526#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="doctor.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="doctor.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/doctor.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patient.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/patient.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-522">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="-431">
+              <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -96,8 +70,9 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/demo.hbs" />
         <option value="$PROJECT_DIR$/views/patients.html" />
-        <option value="$PROJECT_DIR$/routes/patient.js" />
         <option value="$PROJECT_DIR$/views/doctors.html" />
+        <option value="$PROJECT_DIR$/views/patient.hbs" />
+        <option value="$PROJECT_DIR$/routes/patient.js" />
         <option value="$PROJECT_DIR$/routes/doctor.js" />
         <option value="$PROJECT_DIR$/views/doctor.hbs" />
       </list>
@@ -200,12 +175,12 @@
       <workItem from="1540227099172" duration="7844000" />
       <workItem from="1541666340240" duration="6611000" />
       <workItem from="1541691269815" duration="6369000" />
-      <workItem from="1541753890478" duration="14898000" />
+      <workItem from="1541753890478" duration="30577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35722000" />
+    <option name="totallyTimeSpent" value="51401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
@@ -487,17 +462,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/patient.js">
+    <entry file="file://$PROJECT_DIR$/views/patient.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+        <state relative-caret-position="357">
+          <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/doctors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="900">
           <caret line="50" column="68" lean-forward="false" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
           <folding>
             <element signature="e#1520#1526#0" expanded="true" />
@@ -507,24 +482,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/doctor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/patient.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="129">
+          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/doctor.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="-431">
+          <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/patient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="90" column="135" lean-forward="false" selection-start-line="90" selection-start-column="135" selection-end-line="90" selection-end-column="135" />
           <folding />
         </state>
       </provider>
